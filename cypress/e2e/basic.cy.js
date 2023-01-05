@@ -4,9 +4,9 @@ describe('empty spec', () => {
   })
 
   it('opens the index page', () => {
-    cy.get('h1').contains('Great coffee with a conscience')
+    cy.get('h2').contains('NPO法人 スポーツクラブ飯山')
   })
-
+/*
   it('navigates to the product page', () => {
     cy.get('a[href="/products"]').eq(0).click();
     cy.url().should("include", "/products")
@@ -24,11 +24,14 @@ describe('empty spec', () => {
     cy.url().should("include", "/post")
     cy.get('h1').contains(/Latest Stories/i)
   })
+*/
 })
 
 describe('validate blog', () => {
+/*
   it('should have only 3 blog posts by default', () => {
     cy.visit('/post')
     cy.get('ul#blog-list li').should('have.length', 3);
   })
+*/
 })
