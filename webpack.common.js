@@ -35,16 +35,28 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
         use: [
-          "style-loader", 
+          {
+            loader: "style-loader"
+          },
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
               esModule: false
             }
-          }, 
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "postcss-loader",
+          }, {
+            loader: "sass-loader",
+            options: {
+              sassOptions: {
+                outputStyle: "expanded",
+              },
+            },
+          }
         ]
       }
     ]
