@@ -4,7 +4,7 @@ describe('empty spec', () => {
   })
 
   it('opens the index page', () => {
-    cy.get('h2').contains('NPO法人 スポーツクラブ飯山')
+    cy.get('a').contains('NPO法人 スポーツクラブ飯山')
   })
 /*
   it('navigates to the product page', () => {
