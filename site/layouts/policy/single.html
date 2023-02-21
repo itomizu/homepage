@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<article class="pa3">
+  <h1 class="f2 b ma3 center">プライバシーポリシー</h1>
+
+  <p class="measure lh-copy" style="max-width: initial;">
+    巡礼ウォーク（以下、「本サービス」といいます。）は、ユーザの皆様の個人情報の重要性を認識し、
+    その適切な収集・利用・保護をはかるとともに、安全管理を行うため、
+    以下の通りプライバシーポリシー（以下、「当ポリシー」といいます。）を定めます。
+  </p>
+
+  {{ range .Params.policy }}
+    <div class="mb3">
+      <h4 class="f4 b mb3">{{ .title }}</h4>
+      <p style="max-width: initial;">{{ .content | safeHTML}}</p>
+    </div>
+  {{ end }}
+</div>
+
+{{ end }}
