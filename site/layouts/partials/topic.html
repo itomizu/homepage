@@ -1,7 +1,6 @@
-<div class="ph6 pt4 pb4 bg-off-white">
+<div class="ph4 pt4 pb4 bg-off-white">
 
     <h2 class="f2 b lh-title mb2">Topics</h2>
-
     <div class="flex-ns mhn2-ns mb3">
       {{ $section := site.GetPage "post" }}
       {{ range $section.Pages }}
@@ -10,6 +9,8 @@
       </div>
       {{ end }}
     </div>
+    <!-- NOTE: トピックスができたら削除 -->
+    <p class="b">準備中</p>
 
     {{/*
     <div class="tc">
